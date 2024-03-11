@@ -1,5 +1,5 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import javax.swing.JFrame;
+
 public class Main {
     private static  final int WIDTH = 800;
     private static  final int HEIGHT = 800;
@@ -8,6 +8,12 @@ public class Main {
     public static void main(String[] args) {
         final JFrame frame = new JFrame("Snake Game");
         frame.setSize(WIDTH, HEIGHT);
+        SnakeGame game = new SnakeGame();
+        frame.add(game);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setResizable(false);
+        frame.setVisible(true);
 
     }
 }
